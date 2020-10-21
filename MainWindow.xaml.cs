@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,14 +16,29 @@ using System.Windows.Shapes;
 
 namespace Iscu_Paula_LAB2
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    class DoughnutMachine
     {
-        public MainWindow()
+        private DoughnutMachine myDoughnutMachine;
+        private void frm_Loaded(object sender, RoutedEventArgs e)
         {
-            InitializeComponent();
+            myDoughnutMachine = newDoughnutMachine();
         }
+
+        private DoughnutMachine newDoughnutMachine()
+        {
+            throw new NotImplementedException();
+        }
+
+        private int mRaisedGlazed;
+        private int mRaisedSugar;
+        private int mFilledLemon;
+        private int mFilledChocolate;
+        private int mFilledVanilla;
+        private void glazedToolStripMenuItem_Click(object sender,RoutedEventArgs e)
+        {
+            glazedToolStripMenuItem_Click.IsChecked = true;
+
+        }
+       
     }
 }
