@@ -36,9 +36,9 @@ namespace Iscu_Paula_LAB2
         private int mFilledVanilla;
         private void glazedToolStripMenuItem_Click(object sender,RoutedEventArgs e)
         {
-            glazedToolStripMenuItem_Click.IsChecked = true;
 
         }
-       
+      
     }
+  
 }
