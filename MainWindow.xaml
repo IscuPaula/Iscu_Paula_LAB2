@@ -23,7 +23,7 @@
             <RowDefinition Height="0*"/>
             <RowDefinition Height="204*"/>
         </Grid.RowDefinitions>
-        <Label x:Name="IblTitle" Content="Doughnuts-Bake&amp;Sale" HorizontalAlignment="Left" Margin="269,53,0,0" FontSize="24" FontWeight="Bold" Width="330" RenderTransformOrigin="0.851,0.389" Grid.Row="1" Grid.Column="3" VerticalAlignment="Top" Height="82" Grid.RowSpan="2" Grid.ColumnSpan="3">
+        <Label x:Name="IblTitle" Content="Doughnuts-Bake&amp;Sale" HorizontalAlignment="Left" Margin="264,42,0,0" FontSize="24" FontWeight="Bold" Width="330"  Grid.Row="1" Grid.Column="3" VerticalAlignment="Top" Height="82" Grid.ColumnSpan="3" Grid.RowSpan="2">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="0.948"/>
@@ -97,6 +97,6 @@
         <Button x:Name="btnCheckOut" Content="Check Out" Grid.Column="5" HorizontalAlignment="Left" Margin="280,122,0,0" Grid.Row="4" VerticalAlignment="Top" Width="150" FontWeight="Bold" Height="27"/>
 
         <TextBox x:Name="txtSugarRaised1" Grid.Column="3" HorizontalAlignment="Left" Margin="60,0,0,0" Grid.Row="2" Text="0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" IsReadOnly="True"/>
-        <Menu x:Name="Main" Grid.ColumnSpan="4" Margin="10,10,221,10" Grid.RowSpan="2">            <MenuItem Header="File">                <MenuItem Header="Exit"/>            </MenuItem>            <MenuItem Header="_Doughnuts">                <MenuItem Header="Make">                    <MenuItem Header="Raised">                        <MenuItem x:Name="glazedMenuItem" Header="Glazed"/>                        <MenuItem x:Name="sugarMenuItem" Header="Sugar"/>                    </MenuItem>                </MenuItem>                            </MenuItem>                   </Menu>    </Grid>
+        <Menu x:Name="Main" Grid.ColumnSpan="4" Margin="10,10,221,10" Grid.RowSpan="2">            <MenuItem Header="File">                <MenuItem Header="Exit"/>            </MenuItem>            <MenuItem Header="_Doughnuts">                <MenuItem Header="Make">                    <MenuItem Header="Raised">                        <MenuItem x:Name="glazedMenuItem" Header="Glazed"/>                        <MenuItem x:Name="sugarMenuItem" Header="Sugar"/>                    </MenuItem>                </MenuItem>            </MenuItem>        </Menu>    </Grid>
 
 </Window>

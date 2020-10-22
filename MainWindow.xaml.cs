@@ -34,11 +34,25 @@ namespace Iscu_Paula_LAB2
         private int mFilledLemon;
         private int mFilledChocolate;
         private int mFilledVanilla;
+        private readonly DoughnutType Flavor;
+
         private void glazedToolStripMenuItem_Click(object sender,RoutedEventArgs e)
         {
 
         }
-      
+        private void DoughnutCompleteHandler()
+        {
+            switch (myDoughnutMachine.Flavor)
+            {
+                case DoughnutType.Glazed:
+                    mRaisedGlazed++;                   
+                    break;
+                case DoughnutType.Sugar:
+                    mRaisedSugar++;
+                    break;              
+            }
+        }
+
     }
-  
+
 }
