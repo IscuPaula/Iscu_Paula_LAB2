@@ -8,7 +8,7 @@ using System.Windows.Threading;
 
 namespace Iscu_Paula_LAB2
 {
-    class DoughnutsMachine : Component
+    class DoughnutMachine : Component
     {
         private DoughnutType mFlavor;
         public DoughnutType Flavor
@@ -44,7 +44,7 @@ namespace Iscu_Paula_LAB2
             this.doughnutTimer = new DispatcherTimer();
             this.doughnutTimer.Tick += new System.EventHandler(this.doughnutTimer_Tick);
         }
-        public DoughnutsMachine()
+        public DoughnutMachine()
         {
             InitializeComponet();
         }
@@ -68,12 +68,12 @@ namespace Iscu_Paula_LAB2
                 doughnutTimer.Interval = new TimeSpan(0, 0, value);
             }
         }
-        public void MakeDoughnut(DoughnutType dFlavor)
+        public void MakeDoughnuts(DoughnutType dFlavor)
         {
             Flavor = dFlavor;
             switch (Flavor)
             {
-                case DoughnutType.Glazed:  Interval= 3;break;
+                case DoughnutType.Glazed: Interval= 3;break;
                 case DoughnutType.Sugar: Interval = 2;break;
                 case DoughnutType.Lemon: Interval = 5;break;
                 case DoughnutType.Chocolate: Interval = 7;break;
