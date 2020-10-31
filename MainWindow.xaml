@@ -99,6 +99,5 @@
         <TextBox x:Name="txtSugarRaised1" Grid.Column="3" HorizontalAlignment="Left" Margin="60,0,0,0" Grid.Row="2" Text="0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" IsReadOnly="True"/>
         <Menu x:Name="Main" Grid.ColumnSpan="4" Margin="10,10,221,10" Grid.RowSpan="2">            <MenuItem Header="File">                <MenuItem Header="Exit" IsCheckable="True"/>            </MenuItem>            <MenuItem Header="_Doughnuts">                <MenuItem Header="Stop" IsCheckable="True" ></MenuItem>                <MenuItem Header="Make">                    <MenuItem Header="Filled">                        <MenuItem x:Name="lemonMenuItem" Header="Lemon"/>                        <MenuItem x:Name="chocolateMenuItem" Header="Chocolate"/>                        <MenuItem x:Name="vanillaMenuItem" Header="Vanilla"/>                    </MenuItem>                    <MenuItem Header="Raised">                        <MenuItem x:Name="glazedToolStripMenuItem" Header="Glazed" IsCheckable="True" />                        <MenuItem x:Name="sugarToolStripMenuItem" Header="Sugar" IsCheckable="True"/>                    </MenuItem>
                 </MenuItem>            </MenuItem>
-        </Menu>    </Grid>
-
+        </Menu>    </Grid>
 </Window>
